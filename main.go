@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/google/uuid"
+	"github.com/renhongcai/indirect"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 )
@@ -17,4 +18,8 @@ func main() {
 
 	p = message.NewPrinter(language.Greek)
 	p.Printf("Number format: %v.\n", 1500)
+
+
+        indirect.GetFlagValue()
+	indirect.RetryFunc()
 }
